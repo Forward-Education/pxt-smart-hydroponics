@@ -1,0 +1,27 @@
+{
+    "name": "fwd-smart-hydroponics",
+    "version": "1.0.3",
+    "description": "Forward Education's Smart Hydroponics Kit extension, micro:bit V2 only.",
+    "license": "MIT",
+    "dependencies": {
+        "fwd-float": "github:Forward-Education/pxt-fwd-modules/fwd-float#v1.0.5",
+        "fwd-ph": "github:Forward-Education/pxt-fwd-modules/fwd-ph#v1.0.5",
+        "fwd-lights": "github:Forward-Education/pxt-fwd-modules/fwd-lights#v1.0.5",
+        "fwd-pump": "github:Forward-Education/pxt-fwd-modules/fwd-pump#v1.0.5"
+    },
+    "files": [
+        "README.md"
+    ],
+    "testFiles": [
+        "tests/test.ts"
+    ],
+    "public": true,
+    "targetVersions": {
+        "target": "7.0.61",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
