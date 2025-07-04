@@ -1,4 +1,4 @@
-# pxt-fwd-hydroponics
+# pxt-smart-hydroponics
 
 Smart Hydroponics Kit, by Forward Education.
 
