@@ -34,6 +34,7 @@ basic.forever(function () {
 })
 ```
 
+<br>
 Using the [datalogger extension](https://makecode.microbit.org/reference/datalogger) the pH can be logged at the desired frequency to observe trends. Here a log is created every minute.
 
 ```package
