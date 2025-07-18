@@ -28,13 +28,17 @@ basic.forever(function () {
     } else {
         fwdMotors.pump.setOn(true)
     }
-    if (fwdSensors.ph1.isPastThreshold(8, fwdEnums.OverUnder.Over) || fwdSensors.temperature1.isPastThreshold(32, fwdEnums.OverUnder.Over)) {
+    if (fwdSensors.ph1.isPastThreshold(8, fwdEnums.OverUnder.Over)) {
         basic.showIcon(IconNames.Confused)
     }
 })
 ```
 
 Using the [datalogger extension](https://makecode.microbit.org/reference/datalogger) the pH can be logged at the desired frequency to observe trends. Here a log is created every minute.
+
+```package
+datalogger
+```
 
 ```blocks
 basic.forever(function () {
