@@ -21,20 +21,20 @@ Check out our libraries of [lessons](https://learn.forwardedu.com/lesson-library
 The light controller, pH sensor, float sensor, and water pump help create and maintain ideal growing conditions. When a water level drop is detected by the float sensor the pump kicks on and adds water until the float sensor says to stop. If the pH sensor detected abnormal conditions then it sends a visual indicator through the micro:bit display.
 
 ```blocks
-lights.lights1.setBrightness(100)
+fwdLights.lights1.setBrightness(100)
 basic.forever(function () {
-    if (sensors.float1.floatStateConditional(sensors.FloatState.raised)) {
-        motors.pump.setOn(false)
+    if (fwdSensors.float1.floatStateConditional(fwdEnums.RaisedLowered.Raised)) {
+        fwdMotors.pump.setOn(false)
     } else {
-        motors.pump.setOn(true)
+        fwdMotors.pump.setOn(true)
     }
-    if (sensors.ph1.isPastThreshold(8, sensors.ThresholdDirection.Over) || sensors.temperature1.isPastThreshold(32, sensors.ThresholdDirection.Over)) {
+    if (fwdSensors.ph1.isPastThreshold(8, fwdEnums.OverUnder.Over) || fwdSensors.temperature1.isPastThreshold(32, fwdEnums.OverUnder.Over)) {
         basic.showIcon(IconNames.Confused)
     }
 })
 ```
 
-Using the (datalogger extension)[https://makecode.microbit.org/reference/datalogger] the pH can be logged at the desired frequency to observe trends. Here a log is created every minute.
+Using the [datalogger extension](https://makecode.microbit.org/reference/datalogger) the pH can be logged at the desired frequency to observe trends. Here a log is created every minute.
 
 ```blocks
 basic.forever(function () {
