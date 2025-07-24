@@ -10,7 +10,8 @@
         "fwd-pump": "github:Forward-Education/pxt-fwd-modules/fwd-pump#v1.0.8"
     },
     "files": [
-        "README.md"
+        "README.md",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "tests/test.ts"
