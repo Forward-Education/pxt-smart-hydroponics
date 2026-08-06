@@ -1,6 +1,6 @@
 {
     "name": "fwd-smart-hydroponics",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Forward Education's Smart Hydroponics Kit extension, micro:bit V2 only.",
     "license": "MIT",
     "dependencies": {
